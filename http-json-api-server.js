@@ -17,7 +17,7 @@ function unixtime (time) {
   to the path '/api/parsetime'
 */
 const server = http.createServer(function (req, res) {
-  const parsedUrl = new URL(req.url, 'http://example.com')
+  const parsedUrl = new URL(req.url, 'http://medium.com')
   const time = new Date(parsedUrl.searchParams.get('iso'))
   let result
 
